@@ -4,6 +4,9 @@
    A UFLA conta com uma enorme gama de boletins informativos , criados por diversas entidades dentro da universidade , que são distribuidos por meio do email institucional , porém existem dois problemas recorrentes nesse modelo : o recebimento de boletins que não interessam a quem recebeu e o não recebimento de boletins de interesse , em suma o problema consiste em o receber não poder escolher quais boletins ele deseja receber.  
    Com isso em mente a PRG decidiu criar um APP que possibilita ao usuário se cadastrar nos canais de noticias que ele deseja receber , além de poder fazer comentários nesses boletins informativos e curtir as postagens.  
 
+A Universidade Federal de Lavras(UFLA) conta com uma infinidade de entidades capazes de gerar boletins informativos, os quais são distribuídos atraveś do email institucional e de páginas web relativas à tais entidades; entretanto, tal meio de distribuição causa desconfortos recorrentes à alguns usuários: O recebimento de boletins que não são do interesse do mesmo, e o não recebimento de boletins de interesse(ou então, a falta de alguma notificação, dando mais destaque ao recebimento do mesmo).
+Esta falta de controle sobre os boletins levou a PRG à solicitar a criação deste Aplicativo móvel, o qual permitirá aos usuários:
+* 
 
 ## Equipe:
 
