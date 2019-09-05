@@ -25,7 +25,7 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 
 ## Equipe:
 
-###Guilherme Dânrley Silva Hanauer
+### Guilherme Dânrley Silva Hanauer
 * [Perfil Github](https://github.com/Gahiji)
 * Scrum team member;
 
