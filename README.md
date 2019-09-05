@@ -25,6 +25,10 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 
 ## Equipe:
 
+### Igor Henrique Torati Ruy
+* [Perfil GitHub](https://github.com/igortorati)
+* Scrum Master;
+
 ### Luiz Felipe de Oliveira Calvo
 * [Perfil GitHub](https://github.com/luizcalvo)
 * Desenvolvedor;
