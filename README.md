@@ -39,8 +39,9 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 
 ### Luiz Felipe de Oliveira Calvo
 * [Perfil GitHub](https://github.com/luizcalvo)
-* Desenvolvedor;
 * Scrum team member;
+* Hard Skills: Programação em Java, Python, e C++;
+* Soft Skills: Facilidade com abstrações, Comunicação, Proatividade e Criatividade.
 
 ### Raphael Fernandes Reis Roriz 
 * [Perfil GitHub](https://github.com/RaphaelRoriz)
