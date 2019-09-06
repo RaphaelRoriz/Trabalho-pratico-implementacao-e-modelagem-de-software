@@ -28,6 +28,8 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 ### Guilherme Dânrley Silva Hanauer
 * [Perfil Github](https://github.com/Gahiji)
 * Scrum team member;
+* Hard Skills: Programação C/C++, Python e Administração de Sistemas Linux.
+* Soft Skills: Organização.
 
 ### Igor Henrique Torati Ruy
 * [Perfil GitHub](https://github.com/igortorati)
