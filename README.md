@@ -20,7 +20,7 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
  
  ## Plataformas :
  
- O aplicativo será desenvolvido para a plataforma Andoid.
+ O aplicativo será desenvolvido para a plataforma Android.
   
 
 ## Equipe:
