@@ -32,6 +32,8 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 ### Igor Henrique Torati Ruy
 * [Perfil GitHub](https://github.com/igortorati)
 * Scrum Master;
+* Hard Skills: Programação Java e Criação e Manipulação de BD.
+* Soft Skills: Resolução de Conflitos, Solução de Problemas e Ética.
 
 ### Luiz Felipe de Oliveira Calvo
 * [Perfil GitHub](https://github.com/luizcalvo)
