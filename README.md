@@ -45,5 +45,7 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 ### Raphael Fernandes Reis Roriz 
 * [Perfil GitHub](https://github.com/RaphaelRoriz)
 * Product Owner;
+* Hard Skills:Programação;
+* Soft Skills:Pensamento Crítico , Organização;
 
 
