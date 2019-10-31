@@ -1,0 +1,7 @@
+{
+  "name": "UFLANews",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
