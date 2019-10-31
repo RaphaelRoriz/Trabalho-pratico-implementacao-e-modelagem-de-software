@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
+  <style>
+    #logo {
+      width: 70%;
+      max-width: 500px;
+      max-height: 500px;
+    }
+    #field{
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  </style>
 </ion-header>
-
-<ion-content>
-
+  
+  
+<ion-content class="ion-padding">
+  <section>
+    <ion-list>
+      <div class="ion-text-center ion-padding-vertical"><img src="assets/images/logo.png" id="logo" alt="Logo UFLA News"/></div>
+      <div class="ion-text-center ion-padding-vertical" id="field">
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="ion-text-center ion-padding-vertical" id="field">
+        <ion-item>
+          <ion-label position="stacked">Senha</ion-label>
+          <div>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+          </div>
+          
+        </ion-item>
+      </div>
+      
+    </ion-list>
+  </section>
+  <section class="ion-text-center ion-padding-vertical">
+    <ion-button fill="solid">Entrar</ion-button>
+    <ion-button color="dark" fill="solid">Criar Conta</ion-button>
+  </section>
 </ion-content>
