@@ -1,36 +1,80 @@
 <ion-header>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   <style>
     #logo {
       width: 70%;
       max-width: 500px;
       max-height: 500px;
     }
-    #field{
+    .field {
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      padding: 10px 20px;
+      border: 5px solid #007837;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font: normal 16px/normal "Times New Roman", Times, serif;
+      color: rgba(0,142,198,1);
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      background: rgba(252,252,252,1);
+      -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+      box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      margin-bottom: 15px;
+    }
+    #divInput{
       margin-left: 15%;
       margin-right: 15%;
+    }
+    .label{
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #007837;
+    }
+    .loginButton{
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      cursor: pointer;
+      padding: 10px 20px;
+      border: 4px solid #002091;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font: normal normal bold 20px/normal Arial, Helvetica, sans-serif;
+      color: rgba(255,255,255,0.9);
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      background: #104FCD;
+      -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+      box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+      text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+      -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
     }
   </style>
 </ion-header>
   
   
-<ion-content class="ion-padding">
+<ion-content >
   <section>
     <ion-list>
       <div class="ion-text-center ion-padding-vertical"><img src="assets/images/logo.png" id="logo" alt="Logo UFLA News"/></div>
-      <div class="ion-text-center ion-padding-vertical" id="field">
-        <ion-item>
-          <ion-label position="stacked">Email</ion-label>
-          <ion-input [(ngModel)]="email"></ion-input>
-        </ion-item>
-      </div>
-      <div class="ion-text-center ion-padding-vertical" id="field">
-        <ion-item>
-          <ion-label position="stacked">Senha</ion-label>
-          <div>
-            <ion-input type="password" [(ngModel)]="password"></ion-input>
-          </div>
-          
-        </ion-item>
+      <div id="divInput">
+        <ion-label class="label" position="stacked">Email:</ion-label>
+        <ion-input class="ion-text-center ion-padding-vertical" class="field" [(ngModel)]="email"></ion-input>
+        <ion-label class="label" position="stacked">Senha:</ion-label>
+        <ion-input class="ion-text-center ion-padding-vertical" type="password" class="field" [(ngModel)]="password"></ion-input>
       </div>
       
     </ion-list>
