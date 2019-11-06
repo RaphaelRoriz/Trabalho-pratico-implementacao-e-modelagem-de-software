@@ -49,4 +49,13 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 * Hard Skills:Programação;
 * Soft Skills:Pensamento Crítico , Organização;
 
+## Utilização
 
+1 - Clone o repositorio do github:
+> git clone https://github.com/RaphaelRoriz/Trabalho-pratico-implementacao-e-modelagem-de-software.git
+
+2 - Instale os scripts do *framework* Ionic:
+> npm install @ionic/app-scripts@latest --save-dev
+
+3- Execute o aplicativo:
+> ionic serve
