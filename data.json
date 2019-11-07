@@ -1,0 +1,80 @@
+{
+    "usuarios":[
+        {
+            "id":1,
+            "nomeUsuario":"admim",
+            "email":"admim@admim.com",
+            "senha":"senha",
+            "fotoPerfil":""
+        },
+        {
+            "id":2,
+            "nomeUsuario":"guilhermeDarnley",
+            "email":"guilherme@darnley.com",
+            "senha":"guilherme1234",
+            "fotoPerfil":""
+        },
+        {
+            "id":3,
+            "nomeUsuario":"igorRui",
+            "email":"igor@rui.com",
+            "senha":"igor1234",
+            "fotoPerfil":""
+        },
+        {
+            "id":4,
+            "nomeUsuario":"luizCalvo",
+            "email":"luiz@calvo.com",
+            "senha":"luiz1234",
+            "fotoPerfil":""
+        },
+        {
+            "id":5,
+            "nomeUsuario":"raphaelRoriz",
+            "email":"raphael@roriz.com",
+            "senha":"raphael1234",
+            "fotoPerfil":""
+        }
+    ],
+    "publicadores":[
+        {
+            "id":1,
+            "nome":"prg-pro reitoria de graduação",
+            "imagem":""
+        },
+        {
+            "id":2,
+            "nome":"DCC - departamento de ciencia da computação.",
+            "imagem":""
+        }
+    ],
+    "boletins":[
+        {
+            "id":1,
+            "publicador":"PRG - pro reitoria de graduação",
+            "titulo":"Processo seletivo NESCAU",
+            "dataPublicacao":"08/15/2019 12:00:24",
+            "sessao":"Estao abertos as inscrições para o processo seletivo do Nucleo de estudos em segurança computacional e auditoria da ufla do segundo periodo de 2019.",
+            "imagem":"",
+            "likes":15
+        },
+        {
+            "id":2,
+            "publicador":"PRG - pro reitoria de graduação",
+            "titulo":"Novas bolsas PROAT",
+            "dataPublicao":"11/18/2019 15:00:34",
+            "sessao":"Foi divulgado o edital para novas vagas de bolsas do PROAT ,interessados devem se candidatar até o dia primeiro de dezembro",
+            "imagem":"",
+            "likes":8
+        },
+        {
+            "id":3,
+            "publicador":"PRG - pro reitoria de graduação",
+            "titulo":"Estudantes da ufla vencem game jam",
+            "dataPublicao":"10/15/2019 18:00:34",
+            "sessao":"Estudantes da ufla , dos cursos de ciencia da computacao e sistemas de informação,venceram a ultima game jam do sul de minas.",
+            "imagem":"",
+            "likes":8
+        }
+    ]
+}
