@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NewsModel } from '../model/news.model';
+import { BoletimModel } from '../models/boletins.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import 'rxjs/Rx';
@@ -27,35 +27,35 @@ export class NewsService {
     return options;
   }
 
-  async getAll(): Promise<NewsModel[]> {
+  async getAll(): Promise<BoletimModel[]> {
       const options = await this.getHttpOptions();
 
       return this.http.get(`${API_URL}/news`, options).map(
-        (itens: NewsModel[]) => {
+        (itens: BoletimModel[]) => {
           return itens.map(
-            (item: NewsModel) => {
-              return new NewsModel(
-                item.id, item.title, item.likes, item.publishedAt,
-                item.image, item.content, item.link);
+            (item: BoletimModel) => {
+              return new BoletimModel(
+                item.id, item.publicador, item.titulo, item.dataPublicacao,
+          item.sessao, item.imagem, item.likes);
             }
           )
         }
       ).toPromise();
     }
 
-    async searchById(id: number): Promise<NewsModel> {
+    async searchById(id: number): Promise<BoletimModel> {
       const options = await this.getHttpOptions();
 
       return this.http.get(`${API_URL}/news/${id}`, options).map(
-        (item: NewsModel) => {
-          return new NewsModel(
-            item.id, item.title, item.likes, item.publishedAt,
-            item.image, item.content, item.link);
+        (item: BoletimModel) => {
+          return new BoletimModel(
+            item.id, item.publicador, item.titulo, item.dataPublicacao,
+          item.sessao, item.imagem, item.likes);
         }
       ).toPromise();
     }
 
-    async searchByTitle(title: string): Promise<NewsModel[]> {
+    async searchByTitle(title: string): Promise<BoletimModel[]> {
 
        title = title.trim().toLowerCase();
 
@@ -66,12 +66,12 @@ export class NewsService {
        const options = await this.getHttpOptions();
 
        return this.http.get(`${API_URL}/news?q=${title}`, options).map(
-         (itens: NewsModel[]) => {
+         (itens: BoletimModel[]) => {
            return itens.map(
-             (item: NewsModel) => {
-               return new NewsModel(
-                 item.id, item.title, item.likes, item.publishedAt,
-                 item.image, item.content, item.link);
+             (item: BoletimModel) => {
+               return new BoletimModel(
+                item.id, item.publicador, item.titulo, item.dataPublicacao,
+                item.sessao, item.imagem, item.likes);
              }
            )
          }
@@ -79,14 +79,14 @@ export class NewsService {
      }
 
 
-    async update(news: NewsModel) {
+    async update(news: BoletimModel) {
     const options = await this.getHttpOptions();
 
     return this.http.put(`${API_URL}/news/${news.id}`, news, options).map(
-      (item: NewsModel) => {
-        return new NewsModel(
-          item.id, item.title, item.likes, item.publishedAt,
-          item.image, item.content, item.link);
+      (item: BoletimModel) => {
+        return new BoletimModel(
+          item.id, item.publicador, item.titulo, item.dataPublicacao,
+          item.sessao, item.imagem, item.likes);
       }
     ).toPromise();
   }
