@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { BoletimModel } from 'src/app/models/boletins.model';
+import { BoletinsService } from 'src/app/services/Boletins.service';
+//import { LikesPipe } from 'src/app/pipes/likes.pipe';
 
 @Component({
   selector: 'app-news',
@@ -7,9 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsPage implements OnInit {
 
-  constructor() { }
+  lstNews: BoletimModel[];
 
-  ngOnInit() {
+  constructor(public BoletinsService: BoletinsService) { }
+
+  async ngOnInit() {
+    this.lstNews = await this.BoletinsService.getAll();
   }
 
+  async doRefresh(event: any) {
+    try {
+      this.lstNews = await this.BoletinsService.getAll();
+    } finally {
+      event.target.complete();
+    }
+  }
+
+  async updateListNews(event: any) {
+    this.lstNews = await this.BoletinsService.searchByTitle(event.target.value);
+  }
 }
