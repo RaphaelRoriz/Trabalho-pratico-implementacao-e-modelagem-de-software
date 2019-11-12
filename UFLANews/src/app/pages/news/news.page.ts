@@ -10,23 +10,23 @@ import { BoletinsService } from 'src/app/services/Boletins.service';
 })
 export class NewsPage implements OnInit {
 
-  lstNews: BoletimModel[];
+  lstBoletins: BoletimModel[];
 
   constructor(public BoletinsService: BoletinsService) { }
 
   async ngOnInit() {
-    this.lstNews = await this.BoletinsService.getAll();
+    this.lstBoletins = await this.BoletinsService.getAll();
   }
 
   async doRefresh(event: any) {
     try {
-      this.lstNews = await this.BoletinsService.getAll();
+      this.lstBoletins = await this.BoletinsService.getAll();
     } finally {
       event.target.complete();
     }
   }
 
   async updateListNews(event: any) {
-    this.lstNews = await this.BoletinsService.searchByTitle(event.target.value);
+    this.lstBoletins = await this.BoletinsService.searchByTitle(event.target.value);
   }
 }

@@ -4,7 +4,7 @@
       <ion-title class="title">Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  
+
   <ion-content>
     <section >
       <ion-list>
@@ -16,7 +16,7 @@
           <ion-icon name="person" color="light" slot="end"></ion-icon>
           <ion-label class="label">Publicadores Inscritos</ion-label>
         </ion-item>
-        <ion-item> 
+        <ion-item>
           <ion-icon name="search" color="light" slot="end"></ion-icon>
           <ion-label class="label">Buscar Publicador</ion-label>
         </ion-item>
@@ -29,7 +29,7 @@
             <ion-label class="label">Log Out</ion-label>
           </ion-item>
       </ion-list>
-    
+
     </section>
   </ion-content>
 </ion-menu>
@@ -45,20 +45,13 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-card  color="medium" class="news_div" tappable>
+    <ion-card  color="medium" class="news_div" tappable *ngFor="let boletim of lstBoletins" >
       <ion-card-header>
-        <ion-card-title style="color:#000000">Madison, WI</ion-card-title>
-        <ion-card-subtitle style="color:#000000">10 mil likes | Publicado à 15 min.</ion-card-subtitle>
+        <ion-card-title style="color:#000000">{{boletim.titulo}}</ion-card-title>
+        <ion-card-subtitle style="color:#000000">{{boletim.likes}} | {{boletim.dataPublicacao}}</ion-card-subtitle>
       </ion-card-header>
       <img src="assets/images/news_1.png" class="news_image" />
     </ion-card>
-    <ion-card  color="medium" class="news_div" tappable>
-        <ion-card-header>
-          <ion-card-title color="primary" style="color:#000000">Madison, WI</ion-card-title>
-          <ion-card-subtitle style="color:#000000">10 mil likes | Publicado à 15 min.</ion-card-subtitle>
-        </ion-card-header>
-        <img src="assets/images/news_2.png" class="news_image" />
-      </ion-card>
   </ion-content>
 </div>
 

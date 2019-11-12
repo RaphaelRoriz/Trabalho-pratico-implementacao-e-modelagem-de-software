@@ -13,8 +13,8 @@ const API_URL: string = "http://localhost:3000";
 export class BoletinsService {
 
 
-  constructor(public http: HttpClient) { }
-
+  constructor(public http: HttpClient, ) { }
+//public authService: AuthService
   async getHttpOptions() {
     //const token = await this.authService.getAuthToken();
 
@@ -46,7 +46,7 @@ export class BoletinsService {
     async searchById(id: number): Promise<BoletimModel> {
       const options = await this.getHttpOptions();
 
-      return this.http.get(`${API_URL}/news/${id}`, options).map(
+      return this.http.get(`${API_URL}/boletins/${id}`, options).map(
         (item: BoletimModel) => {
           return new BoletimModel(
             item.id, item.publicador,item.titulo, item.dataPublicacao,
