@@ -52,7 +52,7 @@ export class AuthService {
       await this.storage.set(EMAIL_KEY, email);
 
       this.authState.next(true);
-    } 
+    }
   }
 
   async register(email: string, password: string) {

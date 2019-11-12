@@ -3,7 +3,7 @@ import { BoletimModel } from '../models/boletins.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import 'rxjs/Rx';
-//import { AuthService } from './auth.service';
+import { AuthService } from './auth.service';
 
 const API_URL: string = "http://localhost:3000";
 
