@@ -1,6 +1,6 @@
 <ion-header>
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <ion-toolbar color="secondary"> 
+  <ion-toolbar color="secondary">
     <ion-title>Boletins</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>
@@ -24,7 +24,7 @@
         <ion-card-title style="color:#000000">{{boletim.titulo}}</ion-card-title>
         <ion-card-subtitle style="color:#000000">{{boletim.likes}} | {{boletim.dataPublicacao}}</ion-card-subtitle>
       </ion-card-header>
-      <img src="assets/images/news_1.png" class="news_image" />
+      <img src="{{boletim.imagem}}" class="news_image" />
     </ion-card>
   </ion-content>
 </div>
