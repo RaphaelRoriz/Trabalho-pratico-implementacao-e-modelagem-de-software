@@ -17,11 +17,11 @@ export class NewsPage implements OnInit {
   async ngOnInit() {
     try {
     this.lstBoletins = await this.BoletinsService.getAll();
-console.log("ok: " + this.lstBoletins);
+    console.log("ok: " + this.lstBoletins);
   } catch(error) {
     console.log("no: "+error);
   }
-  }
+}
 
   async doRefresh(event: any) {
     try {
