@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ececec;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #ececec;
+}
+.news_image{
+    border: #707070;
+    border-style:solid;
+    border-width:4px;
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+}
+.news_div{
+    border: #202020;
+    border-style:solid;
+    border-width:4px;
+    border-radius: 6px;
+    height: auto;
+}
+.news_title{
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.news_subtitle{
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.parent_block {
+    color: red;
+    width: 100%;
+    position: relative;
+}
+
+.unseen_notifications {
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    color: #ececec;
+    width: fit-content;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 34px;
+    border: 3px solid black;
+    margin-top: 4px;
+    margin-right: 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
