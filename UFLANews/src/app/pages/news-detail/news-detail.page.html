@@ -1,38 +1,12 @@
-<ion-menu side="end">
-  <ion-header color="secondary">
-    <ion-toolbar color="secondary">
-      <ion-title class="title">Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-    <section >
-      <ion-list>
-        <ion-item>
-          <ion-icon name="home" color="light" slot="end"></ion-icon>
-          <ion-label class="label">Meu Feed</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="person" color="light" slot="end"></ion-icon>
-          <ion-label class="label">Publicadores Inscritos</ion-label>
-        </ion-item>
-        <ion-item> 
-          <ion-icon name="search" color="light" slot="end"></ion-icon>
-          <ion-label class="label">Buscar Publicador</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="settings" color="light" slot="end"></ion-icon>
-          <ion-label class="label">Opções de Conta</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-icon name="power" color="light" slot="end"></ion-icon>
-            <ion-label class="label">Log Out</ion-label>
-          </ion-item>
-      </ion-list>
-    
-    </section>
-  </ion-content>
-</ion-menu>
+<ion-header>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <ion-toolbar color="secondary"> 
+    <ion-title>Boletim</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
 
 <div class="ion-page" main>
@@ -77,12 +51,3 @@
     </ion-card>
   </ion-content>
 </div>
-
-
-
-<script>
-function openMenu() {
-  document.querySelector('ion-menu-controller')
-    .open();
-}
-</script>
