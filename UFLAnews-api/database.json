@@ -1,0 +1,177 @@
+{
+    "usuarios":[
+        {
+            "id":1,
+            "nomeUsuario":"admim",
+            "email":"admim@admim.com",
+            "senha":"senha",
+            "fotoPerfil":""
+        },
+        {
+            "id":2,
+            "nomeUsuario":"guilhermeDarnley",
+            "email":"guilherme@darnley.com",
+            "senha":"guilherme1234",
+            "fotoPerfil":""
+        },
+        {
+            "id":3,
+            "nomeUsuario":"igorRui",
+            "email":"igor@rui.com",
+            "senha":"igor1234",
+            "fotoPerfil":""
+        },
+        {
+            "id":4,
+            "nomeUsuario":"luizCalvo",
+            "email":"luiz@calvo.com",
+            "senha":"luiz1234",
+            "fotoPerfil":""
+        },
+        {
+            "id":5,
+            "nomeUsuario":"raphaelRoriz",
+            "email":"raphael@roriz.com",
+            "senha":"raphael1234",
+            "fotoPerfil":""
+        }
+    ],
+    "publicadores":[
+        {
+            "id":1,
+            "nome":"prg-pro reitoria de graduação",
+            "imagem":""
+        },
+        {
+            "id":2,
+            "nome":"DCC - departamento de ciencia da computação.",
+            "imagem":""
+        }
+    ],
+    "boletins":[
+        {
+            "id":1,
+            "publicador":"PRG - pro reitoria de graduação",
+            "titulo":"Processo seletivo NESCAU",
+            "dataPublicacao":"08/15/2019 12:00:24",
+            "sessao":"Estao abertos as inscrições para o processo seletivo do Nucleo de estudos em segurança computacional e auditoria da ufla do segundo periodo de 2019.",
+            "imagem":"",
+            "likes":15
+        },
+        
+        {
+            "id":2,
+            "publicador":"PRG - pro reitoria de graduação",
+            "titulo":"Novas bolsas PROAT",
+            "dataPublicacao":"11/18/2019 15:00:34",
+            "sessao":"Foi divulgado o edital para novas vagas de bolsas do PROAT ,interessados devem se candidatar até o dia primeiro de dezembro",
+            "imagem":"",
+            "likes":8
+        },
+        {
+            "id":3,
+            "publicador":"PRG - pro reitoria de graduação",
+            "titulo":"Estudantes da ufla vencem game jam",
+            "dataPublicacao":"10/15/2019 18:00:34",
+            "sessao":"Estudantes da ufla , dos cursos de ciencia da computacao e sistemas de informação,venceram a ultima game jam do sul de minas.",
+            "imagem":"",
+            "likes":8
+        }
+    ],
+
+    "publicacoes":[
+        {
+            "id":1,
+            "idPublicador":1,
+            "idBoletim":1
+        },
+        {
+            "id":2,
+            "idPublicador":1,
+            "idBoletim":2
+        },
+        {
+            "id":3,
+            "idPublicador":2,
+            "idBoletim":3
+        }
+    ],
+
+    "seguidos":[
+        {
+            "id":1,
+            "idUsuario":1,
+            "idPublicador":1
+        },
+        {
+            "id":2,
+            "idUsuario":1,
+            "idPublicador":2
+        },
+        {
+            "id":3,
+            "idUsuario":2,
+            "idPublicador":1
+        },
+        {
+            "id":4,
+            "idUsuario":3,
+            "idPublicador":2
+        },
+        {
+            "id":5,
+            "idUsuario":3,
+            "idPublicador":1
+        },
+        {
+            "id":6,
+            "idUsuario":4,
+            "idPublicador":3
+        }
+    ],
+
+    "likes":[
+        {
+            "idLike":1,
+            "idUsuario":1,
+            "idBoletim":1
+        },
+        {
+            "idLike":2,
+            "idUsuario":2,
+            "idBoletim":1
+        },
+        {
+            "idLike":3,
+            "idUsuario":1,
+            "idBoletim":2
+        },
+        {
+            "idLike":4,
+            "idUsuario":4,
+            "idBoletim":2
+        }
+    ],
+
+    "comentarios":[
+        {
+            "idComentario":1,
+            "idUsuario":1,
+            "idBoletim":2,
+            "texto":"gostei, interessante"
+        },
+        {
+            "idComentario":2,
+            "idUsuario":3,
+            "idBoletim":2,
+            "texto":"concordo"
+        },
+        {
+            "idComentario":3,
+            "idUsuario":4,
+            "idBoletim":3,
+            "texto":"poderia ser melhor"
+        }
+    ]
+}
+

@@ -1,0 +1,15 @@
+{
+    "users":[
+        {
+            "id":1,
+            "email":"admim@admim.com",
+            "password":"senha"           
+        },
+        {
+            "id":2,
+            "email":"eu",
+            "password":"sem"           
+        }
+        
+    ]
+}
