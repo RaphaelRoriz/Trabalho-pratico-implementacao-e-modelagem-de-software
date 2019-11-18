@@ -15,7 +15,12 @@ export class NewsPage implements OnInit {
   constructor(public BoletinsService: BoletinsService) { }
 
   async ngOnInit() {
+    try {
     this.lstBoletins = await this.BoletinsService.getAll();
+console.log("ok: " + this.lstBoletins);
+  } catch(error) {
+    console.log("no: "+error);
+  }
   }
 
   async doRefresh(event: any) {
