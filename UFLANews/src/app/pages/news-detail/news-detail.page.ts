@@ -26,7 +26,7 @@ export class NewsDetailPage implements OnInit {
   async ngOnInit() {
     try{
     const userEmail = await this.authService.getAuthEmail();
-    this.user = await this.userService.getUserByEmail(userEmail);
+    //this.user = await this.userService.getUserByEmail(userEmail);
     this.boletimId = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
     this.currentBoletim = await this.boletinsService.searchById(this.boletimId);
   }catch(error){
