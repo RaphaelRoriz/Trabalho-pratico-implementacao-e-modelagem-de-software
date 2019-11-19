@@ -19,9 +19,9 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-card  color="medium" class="news_div" tappable *ngFor="let boletim of lstBoletins" >
+    <ion-card  color="medium" class="news_div" tappable  *ngFor="let boletim of lstBoletins" [routerLink]="['/details', boletim.id]"   >
       <ion-card-header>
-        <ion-card-title style="color:#000000">{{boletim.titulo}}</ion-card-title>
+        <ion-card-title style="color:#000000">{{boletim.titulo}} </ion-card-title>
         <ion-card-subtitle style="color:#000000">{{boletim.likes}} | {{boletim.dataPublicacao}}</ion-card-subtitle>
       </ion-card-header>
       <img src="{{boletim.imagem}}" class="news_image" />

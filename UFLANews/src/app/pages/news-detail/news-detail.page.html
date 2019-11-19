@@ -1,6 +1,6 @@
 <ion-header>
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <ion-toolbar color="secondary"> 
+  <ion-toolbar color="secondary">
     <ion-title>Boletim</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>
@@ -19,21 +19,20 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-card  color="medium" class="news_div" style="background-color: rgb(233, 233, 233);">
+    <ion-card  color="medium" class="news_div" style="background-color: rgb(233, 233, 233);" *ngIf="currentBoletim">
       <section>
         <ion-card-header>
-          <ion-card-title style="color:#000000;font-size: 40px;">Madison, WI</ion-card-title>
-          <ion-card-subtitle style="color:#000000;font-size: 16px;">Publicado por DCC-UFLA.</ion-card-subtitle>
-          <ion-card-subtitle style="color:#000000;font-size: 12px;">10 mil likes | Publicado à 15 min.</ion-card-subtitle>
+          <ion-card-title style="color:#000000;font-size: 40px;">{{currentBoletim.titulo}}</ion-card-title>
+          <ion-card-subtitle style="color:#000000;font-size: 16px;">Publicado por {{currentBoletim.publicador}}.</ion-card-subtitle>
+          <ion-card-subtitle style="color:#000000;font-size: 12px;">{{currentBoletim.likes}} likes | Publicado {{currentBoletim.dataPublicacao}}.</ion-card-subtitle>
         </ion-card-header>
       </section>
       <section>
-        <img src="assets/images/news_1.png" class="news_image" />
+        <img src="{{currentBoletim.imagem}}" class="news_image" />
       </section>
       <section>
         <ion-card-content style="color:#000000;font-size: 20px;">
-          This is content, without any paragraph or header tags,
-          within an ion-card-content element.
+          {{currentBoletim.sessao}}
         </ion-card-content>
       </section>
       <div class="center">
