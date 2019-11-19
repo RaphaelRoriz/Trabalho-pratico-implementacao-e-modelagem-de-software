@@ -1,0 +1,70 @@
+<ion-header>
+  <style>
+    #logo {
+      width: 20%;
+      max-width: 500px;
+      max-height: 500px;
+    }
+    .field {
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      padding: 10px 20px;
+      border: 5px solid #007837;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font: normal 16px/normal "Times New Roman", Times, serif;
+      color: rgb(58, 58, 58);
+      font-family: 'Roboto', sans-serif;
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      background: rgba(252,252,252,1);
+      -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+      box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      margin-bottom: 15px;
+    }
+    #divInput{
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .label{
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #007837;
+    }
+  </style>
+</ion-header>
+
+<ion-content>
+  <section>
+    <div class="ion-text-center ion-padding-vertical"><img src="assets/images/logo.png" id="logo" alt="Logo UFLA News"/></div>
+    <div id="divInput">
+      <ion-label class="label" position="stacked">Nome de usuario:</ion-label>
+      <ion-input class="ion-text-center ion-padding-vertical" class="field" [(ngModel)]="usuario.nome"></ion-input>
+      <ion-label class="label" position="stacked">Email:</ion-label>
+      <ion-input class="ion-text-center ion-padding-vertical" class="field" [(ngModel)]="usuario.email"></ion-input>
+      <ion-label class="label" position="stacked">Senha:</ion-label>
+      <ion-input class="ion-text-center ion-padding-vertical" type="password" class="field" [(ngModel)]="password"></ion-input>
+      <ion-label class="label" position="stacked">Confirme sua senha:</ion-label>
+      <ion-input class="ion-text-center ion-padding-vertical" type="password" class="field"></ion-input>
+      <ion-button  size="medium" >
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="ion-text-center ion-padding-vertical">
+      <ion-button class="button" >Confirmar</ion-button>
+    </div>
+    
+    
+  </section>
+
+
+</ion-content>
+ 
