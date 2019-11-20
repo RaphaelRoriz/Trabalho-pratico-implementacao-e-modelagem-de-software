@@ -1,4 +1,4 @@
-# FakeNewsAPI
+# UFLANewsAPI
 
 API REST utilizada pelo aplicativo 
 
