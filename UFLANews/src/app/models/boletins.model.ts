@@ -1,6 +1,7 @@
 export class BoletimModel{
   public constructor(
     public id? : number,
+    public idPublicador?:number,
     public publicador? : string,
     public titulo? :string,
     public dataPublicacao?: Date,

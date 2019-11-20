@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BoletimModel } from '../models/boletins.model';
+import { PublicadorModel } from '../models/publicadores.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import 'rxjs/Rx';
@@ -35,7 +36,7 @@ export class BoletinsService {
           return itens.map(
             (item: BoletimModel) => {
               return new BoletimModel(
-                item.id, item.publicador,item.titulo, item.dataPublicacao,
+                item.id,item.idPublicador, item.publicador,item.titulo, item.dataPublicacao,
                 item.sessao, item.imagem, item.likes);
             }
           )
@@ -49,11 +50,13 @@ export class BoletinsService {
       return this.http.get(`${API_URL}/boletins/${id}`, options).map(
         (item: BoletimModel) => {
           return new BoletimModel(
-            item.id, item.publicador,item.titulo, item.dataPublicacao,
+            item.id,item.idPublicador, item.publicador,item.titulo, item.dataPublicacao,
             item.sessao, item.imagem, item.likes);
         }
       ).toPromise();
     }
+
+    
 
     async searchByTitle(titulo: string): Promise<BoletimModel[]> {
 
@@ -70,7 +73,7 @@ export class BoletinsService {
            return itens.map(
              (item: BoletimModel) => {
                return new BoletimModel(
-                 item.id, item.publicador,item.titulo,  item.dataPublicacao,
+                 item.id,item.idPublicador, item.publicador,item.titulo,  item.dataPublicacao,
                  item.sessao, item.imagem, item.likes);
              }
            )
@@ -80,14 +83,14 @@ export class BoletinsService {
 
 
     async update(boletins: BoletimModel) {
-    const options = await this.getHttpOptions();
+      const options = await this.getHttpOptions();
 
-    return this.http.put(`${API_URL}/boletins/${boletins.id}`, boletins, options).map(
-      (item: BoletimModel) => {
-        return new BoletimModel(
-          item.id, item.publicador,item.titulo,item.dataPublicacao,
-          item.sessao, item.imagem, item.likes);
-      }
-    ).toPromise();
-  }
+      return this.http.put(`${API_URL}/boletins/${boletins.id}`, boletins, options).map(
+        (item: BoletimModel) => {
+          return new BoletimModel(
+            item.id,item.idPublicador, item.publicador,item.titulo,item.dataPublicacao,
+            item.sessao, item.imagem, item.likes);
+        }
+      ).toPromise();
+    }
 }

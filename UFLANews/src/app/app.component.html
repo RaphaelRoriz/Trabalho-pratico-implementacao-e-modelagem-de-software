@@ -5,7 +5,7 @@
           <ion-title class="title">Menu</ion-title>
         </ion-toolbar>
       </ion-header>
-    
+
       <ion-content>
         <section side="end">
           <ion-list>
@@ -21,7 +21,7 @@
               <ion-icon name="search" color="light" slot="end"></ion-icon>
               <ion-label class="label">Buscar Publicador</ion-label>
             </ion-item>
-            <ion-item>
+            <ion-item tappable [routerLink]="['/perfil']">
               <ion-icon name="settings" color="light" slot="end"></ion-icon>
               <ion-label class="label">Opções de Conta</ion-label>
             </ion-item>
@@ -30,7 +30,7 @@
                 <ion-label class="label">Log Out</ion-label>
               </ion-item>
           </ion-list>
-    
+
         </section>
       </ion-content>
     </ion-menu>

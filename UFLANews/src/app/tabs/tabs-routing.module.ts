@@ -30,12 +30,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab3',
+        path: 'perfil',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+              import('../pages/perfil/perfil.module').then(m => m.PerfilPageModule)
           }
         ]
       },
