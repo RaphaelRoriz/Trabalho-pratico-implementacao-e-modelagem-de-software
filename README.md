@@ -49,6 +49,9 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 * Hard Skills:Programação;
 * Soft Skills:Pensamento Crítico , Organização;
 
+## Documentação:
+* [Documento de requisitos](https://github.com/RaphaelRoriz/Trabalho-pratico-implementacao-e-modelagem-de-software/issues?page=1&q=is%3Aissue+is%3Aopen)
+
 ## Utilização
 
 1 - Clone o repositorio do github:
