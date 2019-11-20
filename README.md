@@ -49,7 +49,17 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 * Hard Skills:Programação;
 * Soft Skills:Pensamento Crítico , Organização;
 
-## Documentação:
+## Atores do sistema:
+* *Visitante*: Um visitante é um usuário que não possui conta e/ou ainda não foi capaz de realizar login no aplicativo;
+* *API-PRG*: A API da PRG gerencia os dados exibidos aos usuários do aplicativo;
+* *Usuário*: O usuário interage com o aplicativo e realiza as tarefas que deseja;
+### Diagrama de casos de uso:
+
+[diagrama]:https://github.com/RaphaelRoriz/Trabalho-pratico-implementacao-e-modelagem-de-software/blob/master/Casos%20De%20Uso%20UFLANewsReduzido.png "Diagrama de casos de uso"
+
+![alt text][diagrama]
+
+### Documentação:
 * [Documento de requisitos](https://github.com/RaphaelRoriz/Trabalho-pratico-implementacao-e-modelagem-de-software/issues?page=1&q=is%3Aissue+is%3Aopen)
 
 ## Utilização
