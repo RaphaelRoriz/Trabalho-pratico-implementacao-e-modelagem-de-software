@@ -70,5 +70,7 @@ Ao utilizar o aplicativo UFLANews, o usuário será capaz de:
 2 - Instale os scripts do *framework* Ionic:
 > npm install @ionic/app-scripts@latest --save-dev
 
+3 - Siga as instruções de instalação da API utilizada pelo aplicativo UFLANews [clicando aqui].(https://github.com/RaphaelRoriz/Trabalho-pratico-implementacao-e-modelagem-de-software/tree/master/UFLAnews-api)
+
 3- Execute o aplicativo:
 > ionic serve
