@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-subscriptions',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriptionsPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public activatedRoute: ActivatedRoute,
+    public authService: AuthService
+  ) { }
 
   ngOnInit() {
   }

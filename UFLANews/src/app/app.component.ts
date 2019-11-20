@@ -29,7 +29,7 @@ export class AppComponent {
       this.splashScreen.hide();
 
       this.authService.authState.subscribe(State=>{
-        if (State){
+        if (State){this.splashScreen.hide();
           this.router.navigate(['/news']);
         }else{
           this.router.navigate(['login']);
@@ -40,7 +40,7 @@ export class AppComponent {
 
   async logout() {
     await this.authService.logout();
-    this.splashScreen.hide();
+
   }
 
 }

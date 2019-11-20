@@ -1,6 +1,6 @@
 <ion-header>
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <ion-toolbar color="secondary"> 
+  <ion-toolbar color="secondary">
     <ion-title>Minhas Inscrições</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>
@@ -13,13 +13,13 @@
     <ion-refresher-content> </ion-refresher-content>
   </ion-refresher>
 
-  <ion-card *ngFor="let favorite of lstFavoriteNews" [routerLink]="['/details', favorite.news.id]">
-    <img src="{{favorite.news.image}}" />
+  <ion-card >
+    <img src="" />
     <ion-card-header>
       <ion-card-title>
-        {{favorite.news.title}}
+
       </ion-card-title>
-    <ion-card-subtitle> {{favorite.news.likes | likes}} likes | {{favorite.news.publishedAt | timeAgo}} </ion-card-subtitle>
+    <ion-card-subtitle>  </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 

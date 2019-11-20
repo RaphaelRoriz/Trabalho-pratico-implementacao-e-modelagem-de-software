@@ -40,6 +40,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'subscriptions',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/subscriptions/subscriptions.module').then(m => m.SubscriptionsPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/news',
         pathMatch: 'full'

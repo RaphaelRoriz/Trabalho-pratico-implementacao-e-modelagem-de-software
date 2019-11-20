@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'details/:id', canActivate: [AuthGuard], loadChildren: './pages/news-detail/news-detail.module#NewsDetailPageModule' },
   //{ path: 'news-detail/:id', loadChildren: './pages/news-detail/news-detail.module#NewsDetailPageModule' },
   { path: 'cadastro', loadChildren: './pages/cadastro/cadastro.module#CadastroPageModule' },
-  { path: 'perfil',canActivate: [AuthGuard], loadChildren: './pages/perfil/perfil.module#PerfilPageModule' }
+  { path: 'perfil',canActivate: [AuthGuard], loadChildren: './pages/perfil/perfil.module#PerfilPageModule' },
+  { path: 'subscriptions',canActivate: [AuthGuard], loadChildren: './pages/subscriptions/subscriptions.module#SubscriptionsPageModule' }
 
 ];
 @NgModule({

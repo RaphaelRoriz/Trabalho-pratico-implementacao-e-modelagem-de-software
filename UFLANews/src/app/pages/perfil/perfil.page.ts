@@ -11,8 +11,8 @@ export class PerfilPage implements OnInit {
 
   constructor(
     public activatedRoute: ActivatedRoute,
-    public authService: AuthService,
-    
+    public authService: AuthService
+
   ) { }
 
   ngOnInit() {
