@@ -30,7 +30,7 @@ export class AppComponent {
 
       this.authService.authState.subscribe(State=>{
         if (State){this.splashScreen.hide();
-          this.router.navigate(['/news']);
+          this.router.navigate(['/boletim']);
         }else{
           this.router.navigate(['login']);
         }

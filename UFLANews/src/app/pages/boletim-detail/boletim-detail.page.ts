@@ -7,11 +7,11 @@ import { AuthService } from 'src/app/services/auth.service';
 import { UserService } from 'src/app/services/usuario.service';
 
 @Component({
-  selector: 'app-news-detail',
-  templateUrl: './news-detail.page.html',
-  styleUrls: ['./news-detail.page.scss'],
+  selector: 'app-boletim-detail',
+  templateUrl: './boletim-detail.page.html',
+  styleUrls: ['./boletim-detail.page.scss'],
 })
-export class NewsDetailPage implements OnInit {
+export class BoletimDetailPage implements OnInit {
 
   currentBoletim : BoletimModel;
   boletimId : number;
@@ -30,7 +30,7 @@ export class NewsDetailPage implements OnInit {
     this.boletimId = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
     this.currentBoletim = await this.boletinsService.searchById(this.boletimId);
   }catch(error){
-    console.log("no: "+error);
+    //usar para debug: console.log("no: "+error);
   }
   }
 

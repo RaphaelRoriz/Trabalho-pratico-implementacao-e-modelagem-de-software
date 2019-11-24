@@ -10,22 +10,22 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {
-        path: 'news',
+        path: 'boletim',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/news/news.module').then(m => m.NewsPageModule)
+              import('../pages/boletim/boletim.module').then(m => m.BoletimPageModule)
           }
         ]
       },
       {
-        path: 'news-detail',
+        path: 'boletim-detail',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/news-detail/news-detail.module').then(m => m.NewsDetailPageModule)
+              import('../pages/boletim-detail/boletim-detail.module').then(m => m.BoletimDetailPageModule)
           }
         ]
       },
@@ -46,6 +46,16 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../pages/subscriptions/subscriptions.module').then(m => m.SubscriptionsPageModule)
+          }
+        ]
+      },
+      {
+        path: 'comentarios',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/comments/comments.module').then(m => m.CommentsPageModule)
           }
         ]
       },

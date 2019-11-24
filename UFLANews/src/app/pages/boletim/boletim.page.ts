@@ -5,10 +5,10 @@ import { BoletinsService } from 'src/app/services/Boletins.service';
 
 @Component({
   selector: 'app-news',
-  templateUrl: './news.page.html',
-  styleUrls: ['./news.page.scss'],
+  templateUrl: './boletim.page.html',
+  styleUrls: ['./boletim.page.scss'],
 })
-export class NewsPage implements OnInit {
+export class BoletimPage implements OnInit {
 
   lstBoletins: BoletimModel[];
 
@@ -17,9 +17,9 @@ export class NewsPage implements OnInit {
   async ngOnInit() {
     try {
     this.lstBoletins = await this.BoletinsService.getAll();
-    console.log("ok: " + this.lstBoletins);
+    //debug: console.log("ok: " + this.lstBoletins);
   } catch(error) {
-    console.log("no: "+error);
+    //debug: console.log("no: "+error);
   }
 }
 
