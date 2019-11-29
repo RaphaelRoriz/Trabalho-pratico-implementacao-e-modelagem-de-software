@@ -60,16 +60,17 @@ const routes: Routes = [
         ]
       },
       {
-        path: '',
-        redirectTo: '/tabs/news',
-        pathMatch: 'full'
-      }
+        path: 'searchPublisher',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/search-publisher/search-publisher.module').then(m => m.SearchPublisherPageModule)
+          }
+        ]
+      },
+
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/news',
-    pathMatch: 'full'
   }
 ];
 

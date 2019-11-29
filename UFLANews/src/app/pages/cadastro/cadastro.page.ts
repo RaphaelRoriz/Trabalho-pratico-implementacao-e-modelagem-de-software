@@ -48,8 +48,6 @@ export class CadastroPage implements OnInit {
 
         const token: any = await this.authService.register(this.user.email, this.password);
 
-        // Isto foi necessário, pois o token ainda não existe e o usuário
-        // precisa ser cadastrado na base de dados da API
         await this.userService.add(this.user, token.access_token);
 
         this.user = new UsuarioModel();
