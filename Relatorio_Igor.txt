@@ -1,0 +1,23 @@
+Nome: Igor Henrique Torati Ruy
+Matricula: 201710148
+
+Tarefas realizadas no projeto: No trabalho minhas tarefas realizadas foram inicialmente de gerência do Kanban (aba projects do github), básicamente passar para o git o que havia sido escrito no documento de requisitos.
+Após fazer isso minha próxima tarefa foi a criação do projeto no modelo tabs do Ionic, a partir dai comecei a criação do front-end das páginas prototipadas, não consegui deixar as páginas iguais, então tive que adaptar de maneira que não perdessemos a identidade visual do produto, além disso também tomei conta de adaptar as cores de algumas páginas e definir essas cores nas váriaveis padrão do Ionic.
+As páginas que criei foram: Página de Login, Página de Boletins (inicialmente denominada news), Página de Detalhes de Boletins, modelo do Menu de navegação, Página de Comentários, Página de Publicadores Inscritos.
+Essas foram as primeiras páginas criadas e possívelmente serviram de base para as outras restantes, como Feed do Publicador e 
+Página de Cadastro (que utiliza os mesmos modelos de campo de texto).
+Além disso criei também futilmente o modelo do banco de dados, mas preferimos utilizar o JSON-Server para simular 
+os dados do banco.
+Embora tenhamos inicialmente definido que iriamos utilizar Scrum não foi possível utilizá-lo de maneira correta, principalmente por motivos de falta de tempo da equipe para nos reunirmos, então meu papel de Scrum Master não pode ser concretizado. O que fiz para tentar gerenciar o projeto com os membros da equipe foi dar ideias e sugerir separações de atividades para cada membro, inicialmente dividi a implementação das interfaces entre 3 pessoas e o quarto membro iria implementar o Backend, porém, por conta novamente da falta de tempo de todos só haviam 5 telas prontas para apresentação da interface, as telas eram Login, Boletins, Menu, Detalhes de Boletim e Cadastro. Por conta das restrições de tempo dos membros e para evitar perda de tempo de alguns membros terem que aprender a mexer com a parte de interface do Ionic resolvi fazer mais 3 telas e deixar mais um membro da equipe responsável pelo Backend. Dessa maneira não implementei nenhuma parte do backend, apenas do front.
+
+Horas dedicadas ao projeto: Estimo que tenha dedicado entre 24 à 28 horas ao projeto.
+
+Dificuldades encontradas: Achei bem complicado de e utilizar o Ionic, por várias vezes copiava exatamente um código de exemplo da página de documentação do programa e nada aparecia na tela, nem ao menos um erro, isso ocorria mesmo após ter corrigido qual seria a página inicial do aplicativo que estavamos desenvolvendo. Outra grande dificuldade foi para trocar coisas referentes aos componentes do Ionic, como adicionar mais variáveis de cor, alterar a cor padrão de fundo, alterar configurações padrão de componentes entre outros problemas para e utilizar a ferramenta.
+A falta de problemas semelhantes quando buscando uma solução online também dificultou bastante o desenvolvimento adequado das interfaces.
+
+O que aprendeu: No mais, algumas coisas de como lidar com o front end no Ionic, existem coisas que devem ser definidas na declaração do componente, outras podem ser colocadas no arquivo css, outras no arquivo variables do projeto Ionic.
+
+
+O que poderia ter feito a mais: Sem dúvida acredito que minha participação no projeto deixou muito a desejar, gostaria de poder ter auxiliado mais a equipe no backend do projeto e também ter tido um papel efetivo como Scrum Master, embora não tenha deixado de participar por vontade própria e sim por falta de tempo, tempo esse que foi dedicado à outras disciplinas como Mineração de Dados e principalmente Arquitetura de Software.
+
+Uma crítica a você: Este período foi especialmente complicado justamente pois estou cursando 30 créditos, e quase todas as disciplinas se basearam em trabalhos práticos este período. Sem contar a falta de tempo acho que meu envolvimento com o grupo foi um problema, não me comunicar muito com eles para decidirmos o rumo do projeto foi um problema tão grave quanto a falta de tempo.
