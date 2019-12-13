@@ -1,0 +1,20 @@
+Nome: Luiz Felipe de Oliveira Calvo
+Matricula: 201711882
+
+Tarefas realizadas no projeto: Elaboração do design do aplicativo, e confecção das telas de protótipo;verificação e atendimento de requisitos desejáveis, bem como a elaboração da página wiki do aplicativo no github;
+
+
+Horas dedicadas ao projeto: Entre 3 e 4h por semana;
+
+
+Dificuldades encontradas: A falta de experiência com as tecnologias necessárias para o desenvolvimento do projeto foi minha maior dificuldade encontrada;
+
+
+O que aprendeu: Aprendi um pouco sobre as dinâmicas e sobre os prazos e objetivos estabelecidos em uma empresa de desenvolvimento de software(mesmo que tenha sido apenas de forma teórica); além disso, aprendi o básico sobre o GitHub, e finalmente percebi o quão útil ele realmente pode ser no desenvolvimento de projetos, especialmente em equipe;
+
+
+O que poderia ter feito a mais: Poderia ter investido mais do meu tempo livre no início do período letívo para o aprendizado das linguagens de programação e ferramentas utilizadas, à fim obter um proveito melhor da aprendizagem prática oferecida no curso.
+
+
+Uma crítica a você: Devo administrar melhor meu tempo livre, e não subestimar meus obstáculos.
+

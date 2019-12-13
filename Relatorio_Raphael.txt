@@ -1,0 +1,15 @@
+Nome: Raphael Fernandes Reis Roriz
+Matricula: 201710152
+
+Tarefas realizadas no projeto: Comecei o projeto como Product Owner da equipe e participei das reunioes com o cliente para levantar os requisitos do aplicativo , após isso elaborei com o auxílio da equipe os documentos relativos necessários para o desenvolvimento do projeto , já na etapa de desenvolvimento participei da modelagem da base de dados utilizada e também implementei parte do backend da aplicação.
+
+Horas dedicadas ao projeto: Uma média de 4 horas por semana. 
+
+Dificuldades encontradas: Com certeza o mais difícil do projeto foi aprender a utilizar o framework (Ionic) escolhido para a equipe.
+
+O que aprendeu: Aprendi a utilizar o Ionic e também esclareci algumas dúvidas quanto ao uso dos método http geralmente utilizados em programação web , também me familiarizei mais com o uso de metodologias ágeis para desenvolvimento de projetos em equipe.
+
+
+O que poderia ter feito a mais: Eu poderia ter me forçado a sair da minha zona de conforto e trabalhado também no frontend do aplicativo , também acho que um esforço extra poderia ter sido aplicado para mostrar ao cliente incrementos mais significativos no aplicativo entre uma companhamento e outro.
+
+Uma crítica a você: Devo saber administrar meu tempo e procrastinar menos para me dedicar mais as minhas atividades.

@@ -1,0 +1,28 @@
+Nome: Guilherme Dânrley Silva Hanauer
+Matricula: 201811072
+
+Tarefas realizadas no projeto: Durante a disciplina realizei parte da implementação do front-end e parte
+da implementação do back-end. Front-end: Pagina de cadastro, publicadores
+escritos, edição de perfil. Back-end: Pagina de cadastro, edição de perfil.
+
+Horas dedicadas ao projeto: Aproximadamente 32 horas
+
+Dificuldades encontradas: Tive maior dificuldade na parte de front-end pois não tinha conhecimento
+previo com html e o ionic. principalmente com a parte e estilos e formatação
+das paginas. Posso atribuir esta difiuldade a uma certa resistencia em aprender
+as tecnicas / tecnologias de front-end
+   Houve dificuldade tambem no back-end para entender a estrutura geral do Ionic
+porém não foi tão desgastante como o front-end.
+
+O que aprendeu: Como lições aprendidas destaco o aprendizado do framework Ionic do qual não
+tinha nenhum conhecimento prévio e que despertou meu interesse para a criação
+de aplicações para dispositivos movéis sendo uma boa alternativa ao Android
+Studio. Noções de como é a interação dos componentes de back-end com front-end
+ 
+O que poderia ter feito a mais: Auxiliado a equipe. Muitas das horas investidas
+no desenvolvimento não acabaram sendo incorporadas no trabalho, o que gerou
+um atraso no desenvovimento efetivo das tarefas e sobrecarga para os outros
+membros do grupo.
+
+Uma crítica a você: Organizar se melhor e melhorar a estimativa dos prazos,
+focar em uma funcionalidade de cada vez.

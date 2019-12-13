@@ -9,26 +9,42 @@
       <ion-content>
         <section side="end">
           <ion-list>
-            <ion-item tappable [routerLink]="['/boletim']">
-              <ion-icon name="home" color="light" slot="end"></ion-icon>
-              <ion-label color="light" class="label">Meu Feed</ion-label>
-            </ion-item>
-            <ion-item tappable [routerLink]="['/subscriptions']">
-              <ion-icon name="person" color="light" slot="end"></ion-icon>
-              <ion-label  color="light" class="label">Publicadores Inscritos</ion-label>
-            </ion-item>
-            <ion-item tappable [routerLink]="['/searchPublisher']">
-              <ion-icon name="search" color="light" slot="end"></ion-icon>
-              <ion-label color="light" class="label">Buscar Publicador</ion-label>
-            </ion-item>
-            <ion-item tappable [routerLink]="['/perfil']">
-              <ion-icon name="settings" color="light" slot="end"></ion-icon>
-              <ion-label color="light" class="label">Opções de Conta</ion-label>
-            </ion-item>
-            <ion-item tappable (click) = "logout()">
-                <ion-icon name="power" color="light" slot="end"></ion-icon>
-                <ion-label color="light"  class="label">Log Out</ion-label>
+
+            <ion-menu-toggle>
+              <ion-item tappable [routerLink]="['/boletim']">
+                <ion-icon name="home" color="light" slot="end"></ion-icon>
+                <ion-label class="label">Meu Feed</ion-label>
               </ion-item>
+             </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item tappable [routerLink]="['/subscriptions']">
+                <ion-icon name="person" color="light" slot="end"></ion-icon>
+                <ion-label  class="label">Publicadores Inscritos</ion-label>
+              </ion-item>
+             </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item tappable [routerLink]="['/searchPublisher']">
+                <ion-icon name="search" color="light" slot="end"></ion-icon>
+                <ion-label class="label">Buscar Publicador</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item tappable [routerLink]="['/perfil']">
+                <ion-icon name="settings" color="light" slot="end"></ion-icon>
+                <ion-label class="label">Opções de Conta</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item tappable (click) = "logout()">
+                  <ion-icon name="power" color="light" slot="end"></ion-icon>
+                  <ion-label  class="label">Log Out</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
           </ion-list>
 
         </section>

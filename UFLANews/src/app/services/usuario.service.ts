@@ -44,4 +44,19 @@ export class UserService {
 
     return this.http.post(`${API_URL}/usuarios`, user, options).toPromise();
   }
+
+  async update(user: UsuarioModel, password: string) {
+    const options = await this.getHttpOptions();
+    const data = {
+      "email": user.email,
+      "password": password
+    }
+    return this.http.put(`${API_URL}/usuarios/${user.id}`, data,options).toPromise();
+  }
+
+  async delete(user: UsuarioModel) {
+    const options = await this.getHttpOptions();
+    this.authService.logout();
+    return this.http.delete(`${API_URL}/usuarios/${user.id}`,options).toPromise();
+  }
 }
