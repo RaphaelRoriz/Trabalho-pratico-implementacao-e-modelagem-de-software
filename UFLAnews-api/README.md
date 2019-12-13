@@ -14,7 +14,7 @@ $ npm install
 Para corrigir alguns erros de versionamento, talvez, seja necessário executar o comando abaixo:
 
 ```
-npm audit fix
+$ npm audit fix
 ```
 
 ## Execução
