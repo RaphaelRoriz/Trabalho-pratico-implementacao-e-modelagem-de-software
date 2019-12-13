@@ -7,6 +7,7 @@ API REST utilizada pelo aplicativo
 Entre na pasta da api e execute os comandos abaixo:
 
 ```bash
+$ npm install -g nodemon
 $ npm install
 ```
 
@@ -21,5 +22,5 @@ npm audit fix
 Para colocar esta API em funcionamento, execute o comando abaixo:
 
 ```bash
-$ npm run start-auth
+$ nodemon server.js
 ```
