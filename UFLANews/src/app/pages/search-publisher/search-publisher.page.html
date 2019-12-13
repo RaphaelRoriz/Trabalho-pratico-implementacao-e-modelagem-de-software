@@ -14,9 +14,9 @@
     <ion-button class="button" color="primary">Buscar</ion-button>
   </div>
 
-  <ion-card  color="light" class="news_div" *ngFor="let publicador of lstPublicador" tappable>
+  <ion-card  color="light" class="news_div" *ngFor="let publicador of lstPublicadores" tappable>
     <ion-card-header>
-      <img src="{{publicador.imagem}}" class="news_image" />
+      <img src="{{publicador.imagem}}" class="publicador_image" />
     </ion-card-header>
     <ion-card-title style="color:#000000" class="news_title">{{publicador.nome}}</ion-card-title>
   </ion-card>
