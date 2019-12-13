@@ -16,16 +16,8 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
-  <ion-card *ngFor="let favorite of lstFavoriteNews" [routerLink]="['/details', favorite.news.id]">
-    <img src="{{favorite.news.image}}" />
-    <ion-card-header>
-      <ion-card-title>
-        {{favorite.news.title}}
-      </ion-card-title>
-      <ion-card-subtitle>{{favorite.news.likes | likes}} likes | {{favorite.news.publishedAt | timeAgo}}</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
-<!-- 
+
+
   <div id="divInput">
     <ion-input class="ion-text-center ion-padding-vertical" class="field" placeholder="Digite seu comentário..."></ion-input>
     <ion-button class="button" color="primary">Buscar</ion-button>
