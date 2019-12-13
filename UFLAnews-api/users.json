@@ -1,15 +1,1 @@
-{
-    "users":[
-        {
-            "id":1,
-            "email":"admim@admim.com",
-            "password":"senha"           
-        },
-        {
-            "id":2,
-            "email":"eu",
-            "password":"sem"           
-        }
-        
-    ]
-}
+{"users":[{"id":1,"email":"admim@admim.com","password":"senha"},{"id":2,"email":"eu","password":"sem"},{"id":3,"email":"kaka@kaka","password":"kaka"},{"id":4,"email":"usu@isu","password":"usu"},{"id":5,"email":"kappa@kappa","password":"kappa"}]}
