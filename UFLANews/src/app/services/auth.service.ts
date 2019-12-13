@@ -63,6 +63,19 @@ export class AuthService {
     return this.http.post(`${API_URL}/auth/register`, data).toPromise();
   }
 
+  async update(email: string, password: string,id: number) {
+    const data = {
+      "email": email,
+      "password": password
+    }
+    const token = await this.http.post(`${API_URL}/auth/login`, data).map(
+      (item: any) => {
+        return item.access_token;
+      }
+    ).toPromise();
+    return this.http.put(`${API_URL}/auth/register/${id}`, data).toPromise();
+  }
+
   async logout() {
     await this.storage.remove(TOKEN_KEY);
     await this.storage.remove(EMAIL_KEY);
