@@ -49,8 +49,6 @@
     <div class="ion-text-center ion-padding-vertical"><img src="assets/images/logo.png" id="logo" alt="Logo UFLA News"/></div>
     <div id="divInput">
 
-        
-
       <ion-label class="label" position="stacked">Nome de usuario:</ion-label>
       <ion-input class="ion-text-center ion-padding-vertical" class="field" [(ngModel)]="user.nome"></ion-input>
       <ion-label class="label" position="stacked">Email:</ion-label>
@@ -63,7 +61,7 @@
     </div>
 
     <div class="ion-text-center ion-padding-vertical">
-      <ion-button class="button" (click)="save()">Confirmar</ion-button>
+      <ion-button class="button" (click)="save()" >Confirmar</ion-button>
       <ion-button class="button" [routerLink]="['/login']">Voltar</ion-button>
     </div>
 

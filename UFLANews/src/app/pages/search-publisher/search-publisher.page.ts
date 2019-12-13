@@ -12,4 +12,5 @@ export class SearchPublisherPage implements OnInit {
   ngOnInit() {
   }
 
+  
 }
