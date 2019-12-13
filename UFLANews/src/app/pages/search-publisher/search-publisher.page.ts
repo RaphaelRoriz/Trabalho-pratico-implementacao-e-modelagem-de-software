@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PublicadorModel } from 'src/app/models/publicadores.model';
+import { PublicadoresService } from 'src/app/services/publicadores.service';
 
 @Component({
   selector: 'app-search-publisher',
@@ -7,10 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPublisherPage implements OnInit {
 
-  constructor() { }
+  lstPublicadores: PublicadorModel[];
 
-  ngOnInit() {
+  constructor(public PublicadoresService: PublicadoresService) { }
+
+  async ngOnInit() {
+    try {
+    this.lstPublicadores = await this.PublicadoresService.getAll();
+    debug: console.log("okooo: " + this.lstPublicadores);
+  } catch(error) {
+    debug: console.log("nopp: "+error);
   }
+}
+
+  async doRefresh(event: any) {
+    try {
+      this.lstPublicadores = await this.PublicadoresService.getAll();
+    } finally {
+      event.target.complete();
+    }
+  }
+
+  //async updatePublicadores(event: any) {
+    //this.lstPublicadores = await this.PublicadoresService.searchByTitle(event.target.value);
+  //}
 
   
 }
