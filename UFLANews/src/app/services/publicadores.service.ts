@@ -59,7 +59,7 @@ export class PublicadoresService {
     async getSeguidos(idUsuario : number) {
         const options = await this.getHttpOptions();
         const  lstSeguidos = await this.getAllSubs();
-        let itens : PublicadorModel[];
+        let itens = new Array();
         let i : number;
         for(i=0;i<lstSeguidos.length; ++i){
           if(idUsuario == lstSeguidos[i].idUsuario){

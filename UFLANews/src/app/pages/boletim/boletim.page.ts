@@ -17,9 +17,9 @@ export class BoletimPage implements OnInit {
   async ngOnInit() {
     try {
     this.lstBoletins = await this.BoletinsService.getAll();
-    //debug: console.log("ok: " + this.lstBoletins);
+    console.log("ok: " + this.lstBoletins);
   } catch(error) {
-    //debug: console.log("no: "+error);
+    console.log("no: "+error);
   }
 }
 

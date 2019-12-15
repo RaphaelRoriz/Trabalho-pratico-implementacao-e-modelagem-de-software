@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nomeUsuario": "admim",
-      "email": "admim@admim.com",
+      "email": "admim",
       "senha": "senha",
       "fotoPerfil": ""
     },
@@ -34,21 +34,6 @@
       "email": "raphael@roriz.com",
       "senha": "raphael1234",
       "fotoPerfil": ""
-    },
-    {
-      "nome": "teste",
-      "email": "teste@teste.com",
-      "id": 6
-    },
-    {
-      "nome": "a",
-      "email": "a",
-      "id": 7
-    },
-    {
-      "nome": "b",
-      "email": "b",
-      "id": 8
     }
   ],
   "publicadores": [

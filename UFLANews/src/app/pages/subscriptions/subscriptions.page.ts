@@ -17,7 +17,8 @@ import { FavoritesService } from 'src/app/services/favorites.service'
 export class SubscriptionsPage implements OnInit {
 
   lstSeguidos: SeguidosModel[];
-  user: UsuarioModel;
+  user: UsuarioModel = new UsuarioModel();
+
 
   constructor(
     public activatedRoute: ActivatedRoute,
@@ -30,21 +31,18 @@ export class SubscriptionsPage implements OnInit {
     try{
       if(this.authService.isAuthenticated()){
         const userEmail: string = await this.authService.getAuthEmail();
-        console.log(this.user.email);
         this.user = await this.userService.getUserByEmail(userEmail);
         this.lstSeguidos = await this.publicadoresService.getSeguidos(this.user.id);
 
       }
 
     }catch(error){
-      //usar para debug: console.log("no: "+error);
+      console.log("no: "+error);
     }
   }
 
   async doRefresh(event: any) {
     try {
-      //this.lstFavoriteNews = await this.favoritesService.
-        //getAllByUser(this.user.id, FavoriteTypeModel.STAR);
         this.lstSeguidos = await this.publicadoresService.getSeguidos(this.user.id);
     } finally {
       event.target.complete();
