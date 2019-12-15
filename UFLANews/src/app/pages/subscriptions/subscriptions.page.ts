@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { UsuarioModel } from 'src/app/models/usuarios.model';
+import { SeguidosModel } from 'src/app/models/seguidos.model';
 import { UserService } from 'src/app/services/usuario.service';
+import { PublicadoresService } from 'src/app/services/publicadores.service';
 import { FavoriteModel, FavoriteTypeModel } from 'src/app/models/favorite.model'
 import { FavoritesService } from 'src/app/services/favorites.service'
 
@@ -14,28 +16,36 @@ import { FavoritesService } from 'src/app/services/favorites.service'
 
 export class SubscriptionsPage implements OnInit {
 
-  lstFavoriteNews: FavoriteModel[];
+  lstSeguidos: SeguidosModel[];
   user: UsuarioModel;
 
   constructor(
     public activatedRoute: ActivatedRoute,
     public authService: AuthService,
     public userService: UserService,
-    public favoritesService: FavoritesService
+    public favoritesService: FavoritesService,
+    public publicadoresService : PublicadoresService
   ) { }
-
   async ngOnInit() {
-    const userEmail: string = await this.authService.getAuthEmail();
-    this.user = await this.userService.getUserByEmail(userEmail);
+    try{
+      if(this.authService.isAuthenticated()){
+        const userEmail: string = await this.authService.getAuthEmail();
+        console.log(this.user.email);
+        this.user = await this.userService.getUserByEmail(userEmail);
+        this.lstSeguidos = await this.publicadoresService.getSeguidos(this.user.id);
 
-    this.lstFavoriteNews = await this.favoritesService.
-      getAllByUser(this.user.id, FavoriteTypeModel.STAR);
+      }
+
+    }catch(error){
+      //usar para debug: console.log("no: "+error);
+    }
   }
 
   async doRefresh(event: any) {
     try {
-      this.lstFavoriteNews = await this.favoritesService.
-        getAllByUser(this.user.id, FavoriteTypeModel.STAR);
+      //this.lstFavoriteNews = await this.favoritesService.
+        //getAllByUser(this.user.id, FavoriteTypeModel.STAR);
+        this.lstSeguidos = await this.publicadoresService.getSeguidos(this.user.id);
     } finally {
       event.target.complete();
     }

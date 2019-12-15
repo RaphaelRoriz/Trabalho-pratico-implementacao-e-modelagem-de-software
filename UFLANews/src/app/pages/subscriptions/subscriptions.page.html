@@ -13,13 +13,10 @@
     <ion-refresher-content> </ion-refresher-content>
   </ion-refresher>
 
-  <ion-card *ngFor="let favorite of lstFavoriteNews" [routerLink]="['/details', favorite.news.id]">
-    <img src="{{favorite.news.image}}" />
+  <ion-card *ngFor="let seguido of lstSeguidos" >
+    <img src="{{seguido.image}}" />
     <ion-card-header>
-      <ion-card-title>
-        {{favorite.news.title}}
-      </ion-card-title>
-      <ion-card-subtitle>{{favorite.news.likes | likes}} likes | {{favorite.news.publishedAt | timeAgo}}</ion-card-subtitle>
+      <ion-card-title> {{seguido.title}} </ion-card-title>
     </ion-card-header>
   </ion-card>
 

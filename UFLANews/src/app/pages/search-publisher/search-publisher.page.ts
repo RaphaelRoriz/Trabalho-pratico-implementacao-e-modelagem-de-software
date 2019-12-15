@@ -16,9 +16,9 @@ export class SearchPublisherPage implements OnInit {
   async ngOnInit() {
     try {
     this.lstPublicadores = await this.PublicadoresService.getAll();
-    debug: console.log("okooo: " + this.lstPublicadores);
+    debug: console.log("ok: " + this.lstPublicadores);
   } catch(error) {
-    debug: console.log("nopp: "+error);
+    debug: console.log("not ok: " + error);
   }
 }
 
@@ -34,5 +34,5 @@ export class SearchPublisherPage implements OnInit {
     //this.lstPublicadores = await this.PublicadoresService.searchByTitle(event.target.value);
   //}
 
-  
+
 }
